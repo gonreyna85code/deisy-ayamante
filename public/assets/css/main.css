@@ -1846,8 +1846,7 @@ input, select, textarea {
 	form input[type="password"],
 	form select,
 	form textarea {
-		position: relative;
-		-webkit-appearance: none;
+		position: relative;		
 		display: block;
 		border: 0;
 		outline: 0;
