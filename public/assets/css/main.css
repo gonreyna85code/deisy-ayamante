@@ -1841,9 +1841,9 @@ input, select, textarea {
 		margin-bottom: 0.5em;
 	}
 
-	form input[type="text"],
-	form input[type="email"],
-	form input[type="password"],
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
 	form select,
 	form textarea {
 		position: relative;		
