@@ -3,7 +3,7 @@ const express = require('express');
 const app = express()
 const PORT = 8000
 
-app.get('/test', (req, res) => {
+app.get('/api/test', (req, res) => {
   res.send('Test route 🎉 ')
 })
 
