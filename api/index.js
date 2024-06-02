@@ -1,14 +1,10 @@
-const express = require('express');
+import express from 'express';
 
 const app = express()
 const PORT = 8000
 
-app.get('/', (req, res) => {
-  res.send('Hello World')
-})
-
-app.get('/about', (req, res) => {
-  res.send('About route 🎉 ')
+app.get('/api/test', (req, res) => {
+  res.send('Test route 🎉 ')
 })
 
 app.listen(PORT, () => {
