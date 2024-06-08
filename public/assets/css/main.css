@@ -91,6 +91,7 @@ input, select, textarea {
 .modal-content {
     margin: auto;
     display: block;
+	margin-bottom: 20px;
 	border-radius: 20px;
     width: 50%;
     max-width: 250px;
