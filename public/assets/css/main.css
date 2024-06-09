@@ -72,6 +72,9 @@ input, select, textarea {
 	appearance: none;
 }
 
+.toastify.on {
+	border-radius: 8px;
+}
 /* Modal (background) */
 .modal {
     display: none;

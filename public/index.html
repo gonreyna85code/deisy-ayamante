@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 
 <body class="is-preload">
@@ -144,7 +145,7 @@
                                 <h3 data-lang="es">Radiestesia</h3>
                                 <h3 data-lang="en" style="display: none;">Dowsing</h3>
                             </header>
-                        </article>                        
+                        </article>
                         <article class="item">
                             <a href="#" class="image fit"><img src="images/pic05.jpg"
                                     alt="Neuropsicología del sueño" /></a>
@@ -216,14 +217,17 @@
                     to contact me through the form or my social media. I will be happy to respond as soon as possible.
                 </p>
 
-                <form method="post" action="#">
+                <form method="post" action="http://localhost:4000/api/send-email" id="contact-form">
                     <div class="row">
-                        <div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Nombre"
-                                data-lang="es" /><input type="text" name="name" placeholder="Name" data-lang="en"
-                                style="display: none;" /></div>
-                        <div class="col-6 col-12-mobile"><input type="text" name="email"
-                                placeholder="Correo Electrónico" data-lang="es" /><input type="text" name="email"
-                                placeholder="Email" data-lang="en" style="display: none;" /></div>
+                        <div class="col-6 col-12-mobile">
+                            <input type="text" name="name" placeholder="Nombre" data-lang="es" />
+                            <input type="text" name="name" placeholder="Name" data-lang="en" style="display: none;" d />
+                        </div>
+                        <div class="col-6 col-12-mobile">
+                            <input type="email" name="email" placeholder="Correo Electrónico" data-lang="es" />
+                            <input type="email" name="email" placeholder="Email" data-lang="en"
+                                style="display: none;" />
+                        </div>
                         <div class="col-12">
                             <textarea name="message" placeholder="Mensaje" data-lang="es"></textarea>
                             <textarea name="message" placeholder="Message" data-lang="en"
@@ -235,6 +239,8 @@
                         </div>
                     </div>
                 </form>
+
+
 
             </div>
         </section>
@@ -262,6 +268,7 @@
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
@@ -271,6 +278,9 @@
 
     <script>
         $(document).ready(function () {
+            // Detect browser language
+            const userLang = navigator.language || navigator.userLanguage;
+
             $('#react-app-link').click(function (e) {
                 e.preventDefault();
                 $('#main').hide();
@@ -324,9 +334,6 @@
                 }
             };
 
-            // Detect browser language
-            const userLang = navigator.language || navigator.userLanguage;
-
             // Show modal when clicking on an image
             $('.item .image.fit').click(function (e) {
                 e.preventDefault();
@@ -346,7 +353,7 @@
                 } else {
                     console.error(`Description for ${imgAlt} not found`);
                 }
-            }); 
+            });
 
             // Hide modal when clicking on the close button or outside the modal
             $('.close, #modal').click(function (e) {
@@ -368,6 +375,51 @@
                 $('[data-lang="en"]').show();
                 $('[data-lang="es"]').hide();
             }
+
+            document.querySelector('form').addEventListener('submit', async function (e) {
+                e.preventDefault();
+                // Get the visible name, email, and message fields
+                const name = document.querySelector('input[name="name"]:not([style*="display: none"])').value.trim();
+                const email = document.querySelector('input[name="email"]:not([style*="display: none"])').value.trim();
+                const message = document.querySelector('textarea[name="message"]:not([style*="display: none"])').value.trim();
+                // Check if any of the fields are empty
+                if (!name || !email || !message) {
+                    const errorMessage = userLang.startsWith('es') ? 'Por favor, complete todos los campos.' : 'Please fill out all fields.';
+                    Toastify({
+                        text: errorMessage,
+                        duration: 4000, // Duration of the toast in milliseconds
+                        gravity: "bottom", // Position of the toast
+                        position: "right",
+                        backgroundColor: "#f44336" // Red color for error
+                    }).showToast();
+                    return; // Stop the form submission
+                }
+                const formData = {
+                    name: name,
+                    email: email,
+                    message: message
+                };
+                const response = await fetch('http://localhost:4000/api/send-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
+                const data = await response.json();
+                if (data.success) {
+                    const successMessage = userLang.startsWith('es') ? 'Mensaje enviado correctamente' : 'Message sent successfully';
+                    // Mostrar el toast de éxito con el mensaje correspondiente
+                    Toastify({
+                        text: successMessage,
+                        duration: 4000, // Duración del toast en milisegundos
+                        gravity: "bottom", // Posición del toast
+                        position: "right",
+                        backgroundColor: "#8ebebc"
+                    }).showToast();
+                }
+                this.reset();
+            });
         });
     </script>
 
