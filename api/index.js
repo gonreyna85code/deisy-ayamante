@@ -2,7 +2,7 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-require('dotenv').config();
+require('dotenv').config({ path: '../.env' });
 
 const app = express();
 const PORT = process.env.PORT || 4000;
