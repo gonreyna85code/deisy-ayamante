@@ -1,6 +1,26 @@
 {
-    "home": {
-      "start": "Get Started Now!",
-      "section_intro": "In this section you will find very useful tools for your well-being. From the menu, you can access a variety of resources such as books and meditations, as well as the option to request personal sessions."
-    }
+  "home": {
+    "start": "Get Started Now!",
+    "section_intro": "In this section you will find very useful tools for your well-being. From the menu, you can access a variety of resources such as books and meditations, as well as the option to request personal sessions."
+  },
+  "books": {
+    "title": "Here you will find a selection of my recommended books.",
+    "booksList": [
+      {
+        "title": "The Little Prince",
+        "description": "The Little Prince is a classic work by Antoine de Saint-Exupéry. It tells the story of a young prince who travels through the universe, encountering peculiar characters and learning valuable life lessons.",
+        "image": "https://via.placeholder.com/150/FF5733/FFFFFF?text=The+Little+Prince"
+      },
+      {
+        "title": "One Hundred Years of Solitude",
+        "description": "One Hundred Years of Solitude, by Colombian author Gabriel García Márquez, is a masterpiece of magical realism. It tells the story of the Buendía family over several generations in the fictional town of Macondo.",
+        "image": "https://via.placeholder.com/150/00CED1/FFFFFF?text=One+Hundred+Years+of+Solitude"
+      },
+      {
+        "title": "Harry Potter and the Philosopher's Stone",
+        "description": "The Harry Potter series, written by J.K. Rowling, follows the adventures of a young wizard named Harry Potter and his friends Hermione Granger and Ron Weasley as they attend Hogwarts School of Witchcraft and Wizardry.",
+        "image": "https://via.placeholder.com/150/FFD700/000000?text=Harry+Potter+and+the+Philosopher's+Stone"
+      }
+    ]
   }
+}

@@ -1,6 +1,26 @@
 {
-    "home": {
-      "start": "¡Comienza Ahora!",
-      "section_intro": "En esta sección encontrarás herramientas muy útiles para tu bienestar. Desde el menú, podrás acceder a una variedad de recursos como libros y meditaciones, así como la opción de solicitar sesiones personales."
-    }
+  "home": {
+    "start": "¡Comienza Ahora!",
+    "section_intro": "En esta sección encontrarás herramientas muy útiles para tu bienestar. Desde el menú, podrás acceder a una variedad de recursos como libros y meditaciones, así como la opción de solicitar sesiones personales."
+  },
+  "books": {
+    "title": "Aquí encontrarás una selección de mis libros recomendados.",
+    "booksList": [
+      {
+        "title": "El Principito",
+        "description": "El Principito es una obra clásica de Antoine de Saint-Exupéry. Narra la historia de un joven príncipe que viaja por el universo, encontrando personajes peculiares y aprendiendo valiosas lecciones de vida.",
+        "image": "https://via.placeholder.com/150/FF5733/FFFFFF?text=El+Principito"
+      },
+      {
+        "title": "Cien Años de Soledad",
+        "description": "Cien Años de Soledad, del autor colombiano Gabriel García Márquez, es una obra maestra del realismo mágico. Narra la historia de la familia Buendía a lo largo de varias generaciones en el pueblo ficticio de Macondo.",
+        "image": "https://via.placeholder.com/150/00CED1/FFFFFF?text=Cien+Años+de+Soledad"
+      },
+      {
+        "title": "Harry Potter y la Piedra Filosofal",
+        "description": "La serie de Harry Potter, escrita por J.K. Rowling, sigue las aventuras de un joven mago llamado Harry Potter y sus amigos Hermione Granger y Ron Weasley mientras asisten a la Escuela Hogwarts de Magia y Hechicería.",
+        "image": "https://via.placeholder.com/150/FFD700/000000?text=Harry+Potter+y+la+Piedra+Filosofal"
+      }
+    ]
   }
+}
