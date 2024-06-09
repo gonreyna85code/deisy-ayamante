@@ -12,7 +12,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-//new test
+// env update
 // Configuración del transporte para enviar correos electrónicos (aquí se utiliza Gmail como ejemplo)
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
