@@ -32,7 +32,7 @@ app.post('/api/send-email', (req, res) => {
   const mailOptions = {
     from: email, // Establecer el remitente como la dirección de correo electrónico proporcionada por el usuario
     replyTo: email, // Configurar replyTo para que las respuestas vayan a la dirección de correo electrónico del remitente
-    to: process.env.MAILTO,
+    to: "deisy.ayamante@gmail.com",
     subject: `Mensaje de ${name} desde el formulario de contacto`,
     text: message // Usar la cadena de texto en lugar del array
   };
