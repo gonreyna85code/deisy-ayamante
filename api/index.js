@@ -18,8 +18,8 @@ const transporter = nodemailer.createTransport({
   port: 465,
   secure: true,
   auth: {
-    user: process.env.MAIL,
-    pass: process.env.PSSAPP
+    // user: process.env.MAIL,
+    // pass: process.env.PSSAPP
   }
 });
 
