@@ -24,11 +24,15 @@ const transporter = nodemailer.createTransport({
   }
 });
 
+app.get('/api/test', (req, res) => {
+  res.send("Express on Vercel");
+});
+
 // Ruta para manejar la solicitud de envío de correo desde el formulario de contacto
 app.post('/api/send-email', (req, res) => {
   const { name, email, message } = req.body;
 
-  
+
   const mailOptions = {
     from: email, // Establecer el remitente como la dirección de correo electrónico proporcionada por el usuario
     replyTo: email, // Configurar replyTo para que las respuestas vayan a la dirección de correo electrónico del remitente
