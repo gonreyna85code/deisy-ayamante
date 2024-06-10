@@ -217,7 +217,7 @@
                     to contact me through the form or my social media. I will be happy to respond as soon as possible.
                 </p>
 
-                <form method="post" action="http://127.0.0.1:5050/api/send-email" id="contact-form">
+                <form method="post" action="http://localhost:5050/api/send-email" id="contact-form">
                     <div class="row">
                         <div class="col-6 col-12-mobile">
                             <input type="text" name="name" placeholder="Nombre" data-lang="es" />
@@ -399,7 +399,7 @@
                     email: email,
                     message: message
                 };
-                const response = await fetch('http://127.0.0.1:5050/api/send-email', {
+                const response = await fetch('http://localhost:5050/api/send-email', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
