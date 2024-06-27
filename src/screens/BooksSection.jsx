@@ -61,8 +61,7 @@ const BooksSection = () => {
                     </div>
                 </div>
             </div>
-            <Modal
-                title={t('books.read')}
+            <Modal                
                 visible={isModalVisible}
                 onCancel={handleClose}
                 footer={[
