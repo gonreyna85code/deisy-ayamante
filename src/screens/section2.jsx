@@ -6,11 +6,9 @@ class Section1 extends React.Component {
             <section id="section1" className="two">
                 <div className="container">
                     <header>
-                        <h2>Sección 2</h2>
+                        <h2>Meditaciones</h2>
                     </header>
-                    <p>
-                        Esto es un ejemplo de la sección 2. Puedes agregar aquí cualquier contenido adicional que desees mostrar en esta sección.
-                    </p>
+                    <iframe title='Podcast' src="https://open.spotify.com/embed/playlist/1XlD8w43FqbJ2EwTxePwvF?utm_source=generator" width="100%" height="600px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
             </section>
         );
