@@ -267,6 +267,10 @@ textarea {
 	/* Alinear elementos horizontalmente */
 }
 
+.book-image {
+	max-width: 100%;
+}
+
 .pdf-page {
 	width: auto;
 	/* Ancho automático para mantener la proporción */

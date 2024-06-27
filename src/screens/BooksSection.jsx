@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Document, Page } from 'react-pdf';
 import { useTranslation } from 'react-i18next';
 import pdf from '../files/E-book 7 claves.pdf';
+import bookImage from '../files/E-book 7 claves.png';
 import { pdfjs } from 'react-pdf';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
@@ -19,7 +20,6 @@ const BooksSection = () => {
     }
 
     function handleDownload() {
-        // URL del archivo PDF
         saveAs(pdf, 'E-book 7 claves.pdf');
     }
 
@@ -36,13 +36,14 @@ const BooksSection = () => {
                 </header>
                 <div className="books-grid">
                     <div className="pdf-container">
-                        <Document
+                        {/* <Document
                             file={pdf}
                             onLoadSuccess={onDocumentLoadSuccess}
                             className="pdf-document"
                         >
                             <Page pageNumber={pageNumber} className="pdf-page" />
-                        </Document>
+                        </Document> */}
+                        <img src={bookImage} alt="Book Cover" className="book-image" />
                         <div className="pdf-buttons">
                             <button onClick={handleDownload}>{t('books.download')}</button>
                             <button onClick={handleRead}>{t('books.read')}</button>
