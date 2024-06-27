@@ -308,6 +308,20 @@ textarea {
 	transition: background-color 0.3s ease;
 }
 
+.ant-modal .ant-modal-footer {
+    text-align: center;
+    background: transparent;
+    margin-top: 12px;
+    padding: 0;
+    border-top: none;
+    border-radius: 0;
+}
+
+.modal-button {
+    margin: 0 8px; /* Margen horizontal de 8px a cada lado del botón */
+	margin-top: 5px;
+}	
+
 
 /* Basic */
 

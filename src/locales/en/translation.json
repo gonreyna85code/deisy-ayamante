@@ -6,6 +6,9 @@
   "books": {
     "title": "Here you will find a selection of my recommended books.",
     "download": "Download",
-    "read": "Read"
+    "read": "Read",
+    "previous": "Previous",
+    "next": "Next",
+    "close":  "Close"
   }
 }

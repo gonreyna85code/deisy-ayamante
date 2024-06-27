@@ -6,6 +6,9 @@
   "books": {
     "title": "Aquí encontrarás una selección de mis libros recomendados.",
     "download": "Descargar",
-    "read": "Leer"
+    "read": "Leer",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "close":  "Cerrar"
   }
 }
