@@ -66,13 +66,13 @@ const BooksSection = () => {
                 visible={isModalVisible}
                 onCancel={handleClose}
                 footer={[
-                    <button className="modal-button" key="prev" onClick={handlePreviousPage} disabled={pageNumber <= 1}>
+                    <button key="prev" className="modal-button" onClick={handlePreviousPage} disabled={pageNumber <= 1}>
                         {t('books.previous')}
                     </button>,
-                    <button className="modal-button" key="next" onClick={handleNextPage} disabled={pageNumber >= numPages}>
+                    <button key="next" className="modal-button" onClick={handleNextPage} disabled={pageNumber >= numPages}>
                         {t('books.next')}
                     </button>,
-                    <button className="modal-button" key="close" onClick={handleClose}>
+                    <button key="close" className="modal-button" onClick={handleClose}>
                         {t('books.close')}
                     </button>
                 ]}

@@ -322,6 +322,13 @@ textarea {
 	margin-top: 5px;
 }	
 
+.textLayer {
+    pointer-events: none;
+}
+
+.ant-modal {
+    pointer-events: auto;
+}
 
 /* Basic */
 
