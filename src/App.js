@@ -3,8 +3,8 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import './i18n';
 import Home from './screens/home';
 import BooksSection from './screens/BooksSection';
-import Section2 from './screens/section2';
-import Section3 from './screens/section3';
+import Meditations from './screens/Meditations';
+import Sessions from './screens/Sessions';
 
 const App = () => {
   return (
@@ -13,8 +13,8 @@ const App = () => {
           <Routes>
             <Route path="/home" element={<Home />} />
             <Route path="/booksSection" element={<BooksSection />} />
-            <Route path="/meditations" element={<Section2 />} />
-            <Route path="/sessions" element={<Section3 />} />
+            <Route path="/meditations" element={<Meditations />} />
+            <Route path="/sessions" element={<Sessions />} />
           </Routes>
       </div>
     </Router>

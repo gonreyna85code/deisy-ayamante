@@ -4,11 +4,15 @@
     "section_intro": "In this section you will find very useful tools for your well-being. From the menu, you can access a variety of resources such as books and meditations, as well as the option to request personal sessions."
   },
   "books": {
-    "title": "Here you will find a selection of my recommended books.",
+    "title": "Here you will find a selection of my books",
     "download": "Download",
     "read": "Read",
     "previous": "Previous",
     "next": "Next",
     "close":  "Close"
+  },
+  "meditations": {
+    "title": "Meditations",
+    "subtitle": "I created this space during the pandemic to gift moments of harmony and calm. Today, I share it with you"
   }
 }

@@ -4,11 +4,15 @@
     "section_intro": "En esta sección encontrarás herramientas muy útiles para tu bienestar. Desde el menú, podrás acceder a una variedad de recursos como libros y meditaciones, así como la opción de solicitar sesiones personales."
   },
   "books": {
-    "title": "Aquí encontrarás una selección de mis libros recomendados.",
+    "title": "Aquí encontrarás una selección de mis libros",
     "download": "Descargar",
     "read": "Leer",
     "previous": "Anterior",
     "next": "Siguiente",
     "close":  "Cerrar"
+  },
+  "meditations": {
+    "title": "Meditaciones",
+    "subtitle": "Creé este espacio durante la pandemia para obsequiar momentos de armonía y calma. Hoy, lo comparto contigo"
   }
 }

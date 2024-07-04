@@ -62,7 +62,7 @@ const BooksSection = () => {
                 </div>
             </div>
             <Modal                
-                visible={isModalVisible}
+                open={isModalVisible}
                 onCancel={handleClose}
                 footer={[
                     <button key="prev" className="modal-button" onClick={handlePreviousPage} disabled={pageNumber <= 1}>
