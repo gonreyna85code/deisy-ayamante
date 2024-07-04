@@ -1,7 +1,10 @@
 {
   "home": {
     "start": "Get Started Now!",
-    "section_intro": "In this section you will find very useful tools for your well-being. From the menu, you can access a variety of resources such as books and meditations, as well as the option to request personal sessions."
+    "section_intro": "In this section you will find very useful tools for your well-being. From the menu, you can access a variety of resources such as books and meditations, as well as the option to request personal sessions.",
+    "books": "Books",
+    "meditations": "Meditations",
+    "sessions": "Sessions"
   },
   "books": {
     "title": "Here you will find a selection of my books",

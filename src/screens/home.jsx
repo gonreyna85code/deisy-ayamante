@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     const { t } = useTranslation();
@@ -13,6 +14,11 @@ const Home = () => {
                 <p>
                     {t('home.section_intro')}
                 </p>
+                <div className="mobile-buttons">
+                    <Link to="/booksSection" className="button mobile-button">{t('home.books')}</Link>
+                    <Link to="/meditations" className="button mobile-button">{t('home.meditations')}</Link>
+                    <Link to="/sessions" className="button mobile-button">{t('home.sessions')}</Link>
+                </div>
             </div>
         </section>
     );

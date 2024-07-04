@@ -2701,9 +2701,25 @@ button:active,
 	display: none;
 }
 
-@media screen and (max-width: 960px) {
+.mobile-buttons {
+	display: none;
+}
 
-	/* Basic */
+@media screen and (max-width: 960px) { 
+
+	/* Basic
+	
+	NO NAVBAR (MOBILE SOFT BUTTON ACTIVATES)
+
+	*/
+	.mobile-buttons {
+		display: inline-flex;
+        flex-direction: column;
+	}
+
+	.mobile-button {
+		margin: 15px;
+	}
 
 	html,
 	body {

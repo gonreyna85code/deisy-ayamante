@@ -1,7 +1,10 @@
 {
   "home": {
     "start": "¡Comienza Ahora!",
-    "section_intro": "En esta sección encontrarás herramientas muy útiles para tu bienestar. Desde el menú, podrás acceder a una variedad de recursos como libros y meditaciones, así como la opción de solicitar sesiones personales."
+    "section_intro": "En esta sección encontrarás herramientas muy útiles para tu bienestar. Desde el menú, podrás acceder a una variedad de recursos como libros y meditaciones, así como la opción de solicitar sesiones personales.",
+    "books": "Libros",
+    "meditations": "Meditaciones",
+    "sessions": "Sesiones"
   },
   "books": {
     "title": "Aquí encontrarás una selección de mis libros",
