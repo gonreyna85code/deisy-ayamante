@@ -47,7 +47,7 @@
 
                 </ul>
                 <ul id="react-nav" style="display: none;">
-                    <li><a href="#home" id="main-site-link"><span class="icon solid fa-arrow-left"
+                    <li><a href="#main" id="main-site-link"><span class="icon solid fa-arrow-left"
                                 data-lang="es">Regresar</span><span class="icon solid fa-arrow-left" data-lang="en"
                                 style="display: none;">Back</span></a></li>
                     <li><a href="#booksSection" id="section1-link"><span class="icon solid fa-book"
@@ -151,7 +151,8 @@
                     </div>
                     <div class="col-4 col-12-mobile">
                         <article class="item">
-                            <a href="#" class="image fit"><img src="images/pic06.jpg" alt="Crisis and intervention" /></a>
+                            <a href="#" class="image fit"><img src="images/pic06.jpg"
+                                    alt="Crisis and intervention" /></a>
                             <header>
                                 <h3 data-lang="es">Crisis e intervención</h3>
                                 <h3 data-lang="en" style="display: none;">Crisis and intervention</h3>
@@ -366,6 +367,9 @@
                 $('[data-lang="es"]').hide();
             }
 
+
+
+
             document.querySelector('form').addEventListener('submit', async function (e) {
                 e.preventDefault();
                 // Get the visible name, email, and message fields
@@ -411,6 +415,36 @@
                 this.reset();
             });
         });
+        document.addEventListener('DOMContentLoaded', function (e) {
+            function toggleContent() {
+                const mainContent = document.getElementById('main-content');
+                const reactRoot = document.getElementById('react-root');
+                const hash = window.location.hash;
+                // List of static routes
+                const reactRoutes = ['booksSection', 'sessions', 'meditations', 'home'];
+                // Check if the current URL is a static route
+                if (reactRoutes.some(route => window.location.hash.includes(route))) {                    
+                    e.preventDefault();
+                    $('#main').hide();
+                    $('#react-root').show();
+                    $('#react-nav').show();
+                    $('#main-nav').hide();
+                } else {                    
+                    e.preventDefault();
+                    $('#main').show();
+                    $('#react-root').hide();
+                    $('#react-nav').hide();
+                    $('#main-nav').show();
+                }
+            }
+
+            // Initial check
+            toggleContent();
+
+            // Check on hash change
+            window.addEventListener('hashchange', toggleContent);
+        });
+
     </script>
 
 </body>
