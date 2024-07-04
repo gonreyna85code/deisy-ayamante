@@ -8,7 +8,7 @@ class Section1 extends React.Component {
                     <header>
                         <h2>Meditaciones</h2>
                     </header>
-                    <iframe title='Podcast' src="https://open.spotify.com/embed/playlist/1XlD8w43FqbJ2EwTxePwvF?utm_source=generator" width="100%" height="600px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2iRWhqVHYvcbDMmHzofe4u?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
             </section>
         );
