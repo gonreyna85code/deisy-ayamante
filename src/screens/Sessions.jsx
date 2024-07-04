@@ -1,20 +1,18 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-class Sessions extends React.Component {
-    render() {
-        return (
-            <section id="section1" className="two">
-                <div className="container">
-                    <header>
-                        <h2>Sección 3</h2>
-                    </header>
-                    <p>
-                        Esto es un ejemplo de la sección 3. Puedes agregar aquí cualquier contenido adicional que desees mostrar en esta sección.
-                    </p>
-                </div>
-            </section>
-        );
-    }
+const Sessions = () => {
+    const { t } = useTranslation();
+    return (
+        <section id="section1" className="two">
+            <div className="container">
+                <header>
+                <h2>{t('sessions.title')}</h2>
+                <p>{t('sessions.subtitle')}</p>
+                </header>
+            </div>
+        </section>
+    );
 }
 
 export default Sessions;
