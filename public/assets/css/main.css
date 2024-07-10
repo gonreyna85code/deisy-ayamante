@@ -2045,14 +2045,15 @@ article:last-child {
 }
 
 .image.avatar48 {
-	width: 48px;
-	height: 48px;
-	background: #f00;
+	width: 58px;
+	height: 58px;
+	margin-left: 0px;
 }
 
 .image.avatar48 img {
-	width: 48px;
-	height: 48px;
+	width: 58px;
+	height: 58px;
+	margin-left: 0px;
 }
 
 .image.fit {
