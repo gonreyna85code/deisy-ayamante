@@ -49,7 +49,7 @@ const App = () => {
           <div className="top">
             <div id="logo">
               <span className="image avatar48"><img src="images/avatar.png" alt="" /></span>
-              <h1 id="title">The Therapist <br /> Paradox</h1>
+              <h1 id="title">Therapist <br /> Paradox</h1>
               <p>{t('landing.subtitle')}</p>
             </div>
             <nav id="nav">
