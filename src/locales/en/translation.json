@@ -1,10 +1,50 @@
 {
+  "landing": {
+    "subtitle": "Continoum Care",
+    "enter": "Enter",
+    "aboutMe": "About Me",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "back": "Back",
+    "books": "Books",
+    "meditations": "Meditations",
+    "blog": "Blog",
+    "sessions": "Sessions",
+    "administration": "Administration"
+  },
+  "intro": {
+    "title": "Just take a breath",
+    "subtitle": "Live joyfully, learn wisely",
+    "startNow": "Start Now"
+  },
+  "about": {
+    "name": "Deisy Ayamante",
+    "description": "I am a healing woman who connects her mind, body, and spirit with the earth. I use my daily potions to make things happen. I combine a dose of Occupational Therapy with one of neuropsychology and add an infusion of mindfulness. A touch of travel, laughter, and a few drops of my favorite ingredients: wisdom and love. I share my learnings with you from Chile, New Zealand and Spain."
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "Welcome! Explore my portfolio and discover the projects I have participated in. You will find the foundations of healing and transformation stories, both of my clients and my own. Click on each image for more details and see how my unique approach can help you achieve your goals. My interventions are aimed at caring for therapists, especially those working in mental health or similar roles.",
+    "mindfulness": "Mindfulness",
+    "sleepNeuropsychology": "Sleep Neuropsychology",
+    "reiki": "Reiki",
+    "crisisIntervention": "Crisis and intervention",
+    "occupationalTherapy": "Occupational Therapy"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "If you have any questions, comments, or suggestions, feel free to contact me through the form or my social media. I will be happy to respond as soon as possible.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "sendMessage": "Send Message"
+  },
   "home": {
     "start": "Get Started Now!",
     "section_intro": "In this section you will find very useful tools for your well-being. From the menu, you can access a variety of resources such as books and meditations, as well as the option to request personal sessions.",
     "books": "Books",
     "meditations": "Meditations",
-    "sessions": "Sessions"
+    "sessions": "Sessions",
+    "admin": "Administration"
   },
   "books": {
     "title": "Here you will find a selection of my books",
@@ -21,5 +61,9 @@
   "sessions": {
     "title": "Sessions",
     "subtitle": "Explore my personalized sessions and transform your holistic well-being."
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Explore insightful articles and reflections. Join me in discovering new perspectives and inspirations."
   }
 }

@@ -18,6 +18,7 @@ const Home = () => {
                     <Link to="/booksSection" className="button mobile-button">{t('home.books')}</Link>
                     <Link to="/meditations" className="button mobile-button">{t('home.meditations')}</Link>
                     <Link to="/sessions" className="button mobile-button">{t('home.sessions')}</Link>
+                    <Link to="/admin" className="button mobile-button">{t('home.admin')}</Link>
                 </div>
             </div>
         </section>

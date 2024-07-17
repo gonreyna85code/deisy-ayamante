@@ -1,10 +1,50 @@
 {
+  "landing": {
+    "subtitle": "Cuidado Continuo",
+    "enter": "Ingresar",
+    "aboutMe": "Sobre Mí",
+    "portfolio": "Portafolio",
+    "contact": "Contacto",
+    "back": "Regresar",
+    "books": "Libros",
+    "meditations": "Meditaciones",
+    "blog": "Blog",
+    "sessions": "Sesiones",
+    "administration": "Administración"
+  },
+  "intro": {
+    "title": "Respira",
+    "subtitle": "Vive con alegría, aprende con sabiduría",
+    "startNow": "Comienza Ahora"
+  },
+  "about": {
+    "name": "Deisy Ayamante",
+    "description": "Soy una mujer sanadora que conecta su mente, cuerpo y espíritu con la tierra. Utilizo mis pócimas diarias para hacer que las cosas sucedan. Combino una dosis de Terapia Ocupacional con una de neuropsicología y añado una infusión de mindfulness. Un toque de viajes, risas, y unas gotas de mis ingredientes favoritos: sabiduría y amor. Te comparto mis aprendizajes desde Chile, Nueva Zelanda y España."
+  },
+  "portfolio": {
+    "title": "Portafolio",
+    "description": "¡Bienvenid@! Explora mi portafolio y descubre los proyectos en los que he participado. Encontrarás los pilares de historias de sanación y transformación, tanto de mis clientes como propias. Haz clic en cada imagen para obtener más detalles y ver cómo mi enfoque único puede ayudarte a lograr tus objetivos. Mis intervenciones están dirigidas a cuidar a l@s terapeutas, especialmente a quienes trabajan en salud mental o desempeñan roles similares.",
+    "mindfulness": "Mindfulness",
+    "sleepNeuropsychology": "Neuropsicología del sueño",
+    "reiki": "Reiki",
+    "crisisIntervention": "Crisis e intervención",
+    "occupationalTherapy": "Terapia Ocupacional"
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "Si tienes alguna pregunta, comentario o sugerencia, no dudes en ponerte en contacto conmigo a través del formulario o de mis redes sociales. Estaré encantada de responder lo antes posible.",
+    "name": "Nombre",
+    "email": "Correo Electrónico",
+    "message": "Mensaje",
+    "sendMessage": "Enviar Mensaje"
+  },
   "home": {
     "start": "¡Comienza Ahora!",
     "section_intro": "En esta sección encontrarás herramientas muy útiles para tu bienestar. Desde el menú, podrás acceder a una variedad de recursos como libros y meditaciones, así como la opción de solicitar sesiones personales.",
     "books": "Libros",
     "meditations": "Meditaciones",
-    "sessions": "Sesiones"
+    "sessions": "Sesiones",
+    "admin": "Administración"
   },
   "books": {
     "title": "Aquí encontrarás una selección de mis libros",
@@ -12,7 +52,7 @@
     "read": "Leer",
     "previous": "Anterior",
     "next": "Siguiente",
-    "close":  "Cerrar"
+    "close": "Cerrar"
   },
   "meditations": {
     "title": "Meditaciones",
@@ -21,5 +61,9 @@
   "sessions": {
     "title": "Sesiones",
     "subtitle": "Explora mis sesiones personalizadas y transforma tu bienestar integral."
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Explora artículos reflexivos y reflexiones. Únete a mí en el descubrimiento de nuevas perspectivas e inspiraciones."
   }
 }
