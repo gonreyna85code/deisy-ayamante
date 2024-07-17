@@ -35,13 +35,12 @@ const App = () => {
   };
 
   const toggleMenu = () => {
-    setIsReactNavVisible(!isReactNavVisible);
-    document.body.classList.toggle('header-visible', !isReactNavVisible);
+    document.body.classList.toggle('header-visible');
   };
 
   return (
     <Router>
-      <div id="body" classname="is-preload" >
+      <div id="body" className="is-preload" >
         <button id="headerToggle" className="hamburger-button" onClick={toggleMenu}>
           <FontAwesomeIcon icon={faBars} />
         </button>
@@ -55,54 +54,54 @@ const App = () => {
             <nav id="nav">
               <ul id="main-nav" style={{ display: isReactNavVisible ? 'none' : 'block' }}>
                 <li>
-                  <Link to="/home" onClick={handleReactNavLinkClick} id="react-app-link">
+                  <Link to="/home" onClick={() => { toggleMenu(); handleReactNavLinkClick() }} id="react-app-link">
                     <span className="icon solid fa-leaf">{t('landing.enter')}</span>
                   </Link>
                 </li>
                 <li>
-                  <Link onClick={() => handleScroll('about')}>
+                  <Link onClick={() => { handleScroll('about'); toggleMenu(); }}>
                     <span className="icon solid fa-user">{t('landing.aboutMe')}</span>
                   </Link>
                 </li>
                 <li>
-                  <Link onClick={() => handleScroll('portfolio')}>
+                  <Link onClick={() => { handleScroll('portfolio'); toggleMenu(); }}>
                     <span className="icon solid fa-th">{t('landing.portfolio')}</span>
                   </Link>
                 </li>
                 <li>
-                  <Link onClick={() => handleScroll('contact')}>
+                  <Link onClick={() => { handleScroll('contact'); toggleMenu(); }}>
                     <span className="icon solid fa-envelope">{t('landing.contact')}</span>
                   </Link>
                 </li>
               </ul>
               <ul id="react-nav" style={{ display: isReactNavVisible ? 'block' : 'none' }}>
                 <li>
-                  <Link to="/" onClick={handleMainSiteLinkClick} id="main-site-link">
+                  <Link to="/" onClick={() => { toggleMenu(); handleMainSiteLinkClick() }} id="main-site-link">
                     <span className="icon solid fa-arrow-left">{t('landing.back')}</span>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/booksSection" id="section1-link">
+                  <Link onClick={toggleMenu} to="/booksSection" id="section1-link">
                     <span className="icon solid fa-book">{t('landing.books')}</span>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/meditations" id="section2-link">
+                  <Link onClick={toggleMenu} to="/meditations" id="section2-link">
                     <span className="icon solid fa-spa">{t('landing.meditations')}</span>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/blog" id="section1-link">
+                  <Link onClick={toggleMenu} to="/blog" id="section1-link">
                     <span className="icon solid fa-newspaper">{t('landing.blog')}</span>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/sessions" id="section3-link">
+                  <Link onClick={toggleMenu} to="/sessions" id="section3-link">
                     <span className="icon solid fa-user-friends">{t('landing.sessions')}</span>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/admin" id="section3-link">
+                  <Link onClick={toggleMenu} to="/admin" id="section3-link">
                     <span className="icon solid fa-cogs">{t('landing.administration')}</span>
                   </Link>
                 </li>

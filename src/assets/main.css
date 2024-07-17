@@ -206,6 +206,8 @@ textarea {
 	animation-duration: 0.6s;
 }
 
+
+
 @keyframes zoom {
 	from {
 		transform: scale(0)
@@ -268,7 +270,8 @@ textarea {
 }
 
 .book-image {
-	max-width: 100%;
+	max-width: 70%;
+	max-height: 100%;
 }
 
 .pdf-page {
@@ -300,13 +303,13 @@ textarea {
 
 .pdf-buttons button {
 	margin-right: 18px;
-    padding: 13px 24px;
-    font-size: 23px;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+	padding: 13px 24px;
+	font-size: 18px;
+	color: #ffffff;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+	transition: background-color 0.3s ease;
 }
 
 .ant-modal .ant-modal-footer {
@@ -316,6 +319,15 @@ textarea {
 	padding: 0;
 	border-top: none;
 	border-radius: 0;
+}
+
+.ant-modal-root .ant-modal-mask {
+	position: fixed;
+	inset: 0;
+	z-index: 1000;
+	height: 100%;
+	background-color: rgb(0 0 0 / 87%);
+	pointer-events: none;
 }
 
 .modal-button {
@@ -347,9 +359,9 @@ html {
 body {
 	background: #fff;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 23pt;
-	font-weight: 300;
-	line-height: 1.75em;
+	font-size: 24pt;
+	font-weight: 350;
+	line-height: 1.8em;
 	color: #888;
 }
 
@@ -407,7 +419,7 @@ h6 a strong {
 }
 
 h2 {
-	font-size: 2.5em;
+	font-size: 2em;
 	letter-spacing: -1px;
 }
 
@@ -432,7 +444,7 @@ header>p {
 }
 
 footer {
-	margin: 2em 0 0 0;
+	margin: 6em 0 0 0;
 }
 
 strong,
@@ -508,7 +520,8 @@ br.clear {
 @media screen and (min-width: 961px) and (max-width: 1880px) {
 
 	.container {
-		width: 1200px;
+		width: 1280px;
+
 	}
 
 }
@@ -2263,8 +2276,7 @@ button,
 	cursor: pointer;
 	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("./images/overlay.png");
 	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("./images/overlay.png");
-	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("./images/overlay.png");
-	background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("./images/overlay.png");
+	/* background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("./images/overlay.png"); */
 	-moz-transition: background-color 0.35s ease-in-out;
 	-webkit-transition: background-color 0.35s ease-in-out;
 	-ms-transition: background-color 0.35s ease-in-out;
@@ -2426,7 +2438,7 @@ button:active,
 #logo p {
 	position: relative;
 	display: block;
-	font-size: 0.8em;
+	font-size: 0.6em;
 	color: rgba(255, 255, 255, 0.5);
 	line-height: 1.25em;
 	margin: 0.5em -12px 0 0;
@@ -2488,7 +2500,7 @@ button:active,
 
 /* Footer */
 
-#footer {	
+#footer {
 	text-align: center;
 	background-color: #dce3e2;
 	padding: 3em 0 4em 0;
@@ -2519,13 +2531,13 @@ button:active,
 /* Main */
 
 #main {
-	margin-left: 375px;
+	margin-left: 400px;
 }
 
 #main>section {
 	margin: 0;
 	overflow: hidden;
-	padding: 4em 0;
+	padding: 2em 0;
 	box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 	text-align: center;
 	background-image: url("./images/overlay.png");
@@ -2559,7 +2571,7 @@ button:active,
 }
 
 #main>section.cover {
-	padding: 6em 0px 340px 60px;
+	padding: 5em 0;
 	background-size: cover;
 	background-position: center center;
 }
@@ -2567,11 +2579,14 @@ button:active,
 #main>section.one {
 	background-color: #81918E;
 	background-image: url("./images/banner.jpg");
+
 }
 
 #main>section.two {
 	background-color: #f5fafa;
 	min-height: 77vh;
+	padding-left: 20px;
+	padding-right: 15px;
 }
 
 #main>section.three {
@@ -2592,7 +2607,7 @@ button:active,
 	input,
 	textarea,
 	select {
-		font-size: 20pt;
+		font-size: 23pt;
 	}
 
 	/* Header */
@@ -2603,10 +2618,10 @@ button:active,
 
 	/* Footer */
 
-	
+
 	/* Main */
 
-	
+
 
 }
 
@@ -2618,6 +2633,8 @@ button:active,
 
 	#main>section {
 		padding: 3em 0;
+		padding-left: 4vw;
+
 	}
 
 	#main section.cover {
@@ -2636,7 +2653,7 @@ button:active,
 	input,
 	textarea,
 	select {
-		font-size: 16pt;
+		font-size: 21pt;
 	}
 
 	.container {
@@ -2658,7 +2675,7 @@ button:active,
 	/* Header */
 
 	#header {
-		width: 20%;
+		width: 28%;
 	}
 
 	#logo .image {
@@ -2691,7 +2708,7 @@ button:active,
 	/* Main */
 
 	#main {
-		margin-left: 0px;;
+		margin-left: 25vw;
 	}
 
 }
@@ -2828,7 +2845,7 @@ button:active,
 		left: 0;
 		position: fixed;
 		top: 0;
-		
+
 		z-index: 10001;
 	}
 
