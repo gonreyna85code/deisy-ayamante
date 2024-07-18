@@ -15,7 +15,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.get('/api/test', (req, res) => {
+app.get('/api', (req, res) => {
   res.send("Express on Vercel");
 });
 
