@@ -1,27 +1,9 @@
 {
     "version": 2,
-    "builds": [
-      {
-        "src": "package.json",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "build"
+    "rewrites": [
+        {
+            "source": "/api/:match*",
+            "destination": "/api/:match*"
         }
-      }
-    ],
-    "redirects": [
-      {
-        "source": "/api/:match*",
-        "destination": "/api/:match*"
-      },
-      {
-        "source": "/static/(.*)",
-        "destination": "/static/$1"
-      },
-      {
-        "source": "/(.*)",
-        "destination": "/index.html"
-      }
     ]
-  }
-  
+}
