@@ -56,7 +56,7 @@ const Landing = () => {
             console.log('Success:', data);
         })
         .catch((error) => {
-            console.error('Error:', error);
+            console.log('Error:', error);
         });
     };
 
