@@ -13,6 +13,7 @@ import Sessions from './screens/Sessions';
 import Admin from './screens/Admin';
 import Blog from './screens/Blog';
 import Landing from './screens/Landing';
+import avatarImage from './assets/images/avatar.png';
 
 const App = () => {
   return (
@@ -62,7 +63,7 @@ const MainApp = () => {
       <div id="header">
         <div className="top">
           <div id="logo">
-            <span className="image avatar48"><img src="images/avatar.png" alt="" /></span>
+            <span className="image avatar48"><img src={avatarImage} alt="" /></span>
             <h1 id="title">Therapist <br /> Paradox</h1>
             <p>{t('landing.subtitle')}</p>
           </div>

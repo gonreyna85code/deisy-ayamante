@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Modal } from 'antd';
+import pic02 from '../assets/images/pic02.jpg'
+import pic03 from '../assets/images/pic03.jpg'
+import pic05 from '../assets/images/pic05.jpg'
+import pic06 from '../assets/images/pic06.jpg'
+import pic07 from '../assets/images/pic07.jpg'
+import pic08 from '../assets/images/pic08.jpg'
 
 const Landing = () => {
     const { t } = useTranslation();
@@ -76,7 +82,7 @@ const Landing = () => {
                         <h2>{t('about.name')}</h2>
                     </header>
                     <div className="image featured a">
-                        <img src="images/pic08.jpg" alt="" />
+                        <img src={pic08} alt="" />
                     </div>
                     <p>{t('about.description')}</p>
                 </div>
@@ -92,8 +98,8 @@ const Landing = () => {
                     <div className="row">
                         <div className="col-4 col-12-mobile">
                             <article className="item">
-                                <Link className="image fit a" onClick={() => showModal('images/pic02.jpg', 'portfolio.mindfulnessText')}>
-                                    <img src="images/pic02.jpg" alt="Mindfulness" />
+                                <Link className="image fit a" onClick={() => showModal(pic02, 'portfolio.mindfulnessText')}>
+                                    <img src={pic02} alt="Mindfulness" />
                                 </Link>
                                 <header>
                                     <h3>{t('portfolio.mindfulness')}</h3>
@@ -102,16 +108,16 @@ const Landing = () => {
                         </div>
                         <div className="col-4 col-12-mobile">
                             <article className="item">
-                                <Link className="image fit a" onClick={() => showModal('images/pic05.jpg', 'portfolio.sleepNeuropsychologyText')}>
-                                    <img src="images/pic05.jpg" alt="Neuropsicología del sueño" />
+                                <Link className="image fit a" onClick={() => showModal(pic05, 'portfolio.sleepNeuropsychologyText')}>
+                                    <img src={pic05} alt="Neuropsicología del sueño" />
                                 </Link>
                                 <header>
                                     <h3>{t('portfolio.sleepNeuropsychology')}</h3>
                                 </header>
                             </article>
                             <article className="item">
-                                <Link className="image fit a" onClick={() => showModal('images/pic07.jpg', 'portfolio.reikiText')}>
-                                    <img src="images/pic07.jpg" alt="Reiki" />
+                                <Link className="image fit a" onClick={() => showModal(pic07, 'portfolio.reikiText')}>
+                                    <img src={pic07} alt="Reiki" />
                                 </Link>
                                 <header>
                                     <h3>{t('portfolio.reiki')}</h3>
@@ -120,16 +126,16 @@ const Landing = () => {
                         </div>
                         <div className="col-4 col-12-mobile">
                             <article className="item">
-                                <Link className="image fit a" onClick={() => showModal('images/pic06.jpg', 'portfolio.crisisInterventionText')}>
-                                    <img src="images/pic06.jpg" alt="Crisis and intervention" />
+                                <Link className="image fit a" onClick={() => showModal(pic06, 'portfolio.crisisInterventionText')}>
+                                    <img src={pic06} alt="Crisis and intervention" />
                                 </Link>
                                 <header>
                                     <h3>{t('portfolio.crisisIntervention')}</h3>
                                 </header>
                             </article>
                             <article className="item">
-                                <Link className="image fit a" onClick={() => showModal('images/pic03.jpg', 'portfolio.occupationalTherapyText')}>
-                                    <img src="images/pic03.jpg" alt="Terapia Ocupacional" />
+                                <Link className="image fit a" onClick={() => showModal(pic03, 'portfolio.occupationalTherapyText')}>
+                                    <img src={pic03} alt="Terapia Ocupacional" />
                                 </Link>
                                 <header>
                                     <h3>{t('portfolio.occupationalTherapy')}</h3>
