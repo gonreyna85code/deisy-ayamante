@@ -162,6 +162,7 @@ const Landing = () => {
                                     placeholder={t('contact.name')}
                                     value={formData.name}
                                     onChange={handleChange}
+                                    autoComplete='name'
                                     required
                                 />
                             </div>
@@ -172,6 +173,7 @@ const Landing = () => {
                                     placeholder={t('contact.email')}
                                     value={formData.email}
                                     onChange={handleChange}
+                                    autoComplete='email'
                                     required
                                 />
                             </div>
@@ -181,6 +183,7 @@ const Landing = () => {
                                     placeholder={t('contact.message')}
                                     value={formData.message}
                                     onChange={handleChange}
+                                    autoComplete='off'
                                     required
                                 ></textarea>
                             </div>

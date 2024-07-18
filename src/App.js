@@ -128,12 +128,12 @@ const MainApp = () => {
           {/* Formulario de Inicio de Sesión */}
           <form className="login-form">
             <div className="form-group login">
-              <input type="email" id="email" placeholder='Email' name="email" required />
+              <input type="email" id="email" placeholder='Email' name="email" autoComplete='email' required />
             </div>
             <div className="form-group login">
-              <input type="password" id="password" placeholder='Password' name="password" required />
+              <input type="password" id="password" placeholder='Password' name="password" autoComplete='off' required />
             </div>
-            <div className="form-actions login">              
+            <div className="form-actions login">
               <button type="submit" className="login-button">Iniciar</button>
               <button type="button" className="register-button">Registrar</button>
             </div>
