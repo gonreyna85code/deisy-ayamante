@@ -5,7 +5,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
 import { scroller } from 'react-scroll';
 import './i18n';
-import './assets/main.css';
+import './assets/styles.css';
 import Home from './screens/home';
 import BooksSection from './screens/BooksSection';
 import Meditations from './screens/Meditations';
