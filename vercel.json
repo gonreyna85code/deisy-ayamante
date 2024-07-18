@@ -11,16 +11,16 @@
     ],
     "redirects": [
       {
-        "src": "/api/:match*",
-        "dest": "/api:match*"
+        "source": "/api/:match*",
+        "destination": "/api/:match*"
       },
       {
-        "src": "/static/(.*)",
-        "dest": "/static/$1"
+        "source": "/static/(.*)",
+        "destination": "/static/$1"
       },
       {
-        "src": "/(.*)",
-        "dest": "/index.html"
+        "source": "/(.*)",
+        "destination": "/index.html"
       }
     ]
   }
