@@ -1,9 +1,9 @@
 {
     "version": 2,
-    "rewrites": [
+    "redirects": [
         {
-            "source": "/api",
-            "destination": "/api"
+            "source": "/api/:path*",
+            "destination": "/api/:path*"
         }
     ]
 }
