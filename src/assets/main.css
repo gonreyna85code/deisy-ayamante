@@ -163,6 +163,57 @@ textarea {
 	border-radius: 8px;
 }
 
+.login-form {
+	width: 80%;
+}
+
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form select {
+	height: 10px;
+	margin-top: 20px;
+	font-size: 20pt;
+	background: rgba(255, 255, 255, 0.048);
+}
+
+.form-actions.login {
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-evenly;
+	align-items: flex-end;
+}
+
+.middle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	margin-top: 50px;
+}
+
+.login-form input[type="button"],
+.login-form input[type="submit"],
+.login-form input[type="reset"],
+.login-form button {
+	position: relative;
+	display: inline-block;
+	border-radius: 0.5em;
+	color: #fff !important;
+	text-decoration: none;
+	padding: 0.8em 2em 0.8em 2em;
+	margin-top: 20px;
+	font-size: 13pt;
+	background-color: #8ebebc38;
+	border: 0;
+	cursor: pointer;
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url(http://localhost:3000/static/media/overlay.eac66bf….png);
+	transition: background-color 0.35s ease-in-out;
+}
+
 /* Modal (background) */
 .modal {
 	display: none;

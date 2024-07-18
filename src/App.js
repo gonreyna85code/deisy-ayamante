@@ -123,11 +123,26 @@ const MainApp = () => {
             </ul>
           </nav>
         </div>
+        <div className="middle">
+          {/* Formulario de Inicio de Sesión */}
+          <form className="login-form">
+            <div className="form-group login">
+              <input type="email" id="email" placeholder='Email' name="email" required />
+            </div>
+            <div className="form-group login">
+              <input type="password" id="password" placeholder='Password' name="password" required />
+            </div>
+            <div className="form-actions login">              
+              <button type="submit" className="login-button">Iniciar</button>
+              <button type="button" className="register-button">Registrar</button>
+            </div>
+          </form>
+        </div>
         <div className="bottom">
           <ul className="icons">
-            <li><a href="www.instagram.com" className="icon brands fa-instagram"><span className="label">Instagram</span></a></li>
-            <li><a href="www.facebook.com" className="icon brands fa-facebook-f"><span className="label">Facebook</span></a></li>
-            <li><a href="www.github.com" className="icon solid fa-envelope"><span className="label">Email</span></a></li>
+            <li><a href="https://www.instagram.com" className="icon brands fa-instagram"><span className="label">Instagram</span></a></li>
+            <li><a href="https://www.facebook.com" className="icon brands fa-facebook-f"><span className="label">Facebook</span></a></li>
+            <li><a href="https://www.github.com" className="icon solid fa-envelope"><span className="label">Email</span></a></li>
           </ul>
         </div>
       </div>
