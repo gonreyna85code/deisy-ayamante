@@ -173,7 +173,7 @@ textarea {
 .login-form select {
 	height: 10px;
 	margin-top: 20px;
-	font-size: 20pt;
+	font-size: 16pt;
 	background: rgba(255, 255, 255, 0.048);
 }
 
@@ -206,7 +206,7 @@ textarea {
 	text-decoration: none;
 	padding: 0.8em 2em 0.8em 2em;
 	margin-top: 20px;
-	font-size: 13pt;
+	font-size: 10pt;
 	background-color: #8ebebc38;
 	border: 0;
 	cursor: pointer;
@@ -410,7 +410,7 @@ html {
 body {
 	background: #fff;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 24pt;
+	font-size: 18pt;
 	font-weight: 350;
 	line-height: 1.8em;
 	color: #888;
@@ -433,7 +433,7 @@ input,
 textarea,
 select {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 23pt;
+	font-size: 18pt;
 	font-weight: 300;
 	line-height: 1.75em;
 	color: #888;
@@ -2582,7 +2582,7 @@ button:active,
 /* Main */
 
 #main {
-	margin-left: 400px;
+	margin-left: 320px;
 }
 
 #main>section {
@@ -2658,13 +2658,13 @@ button:active,
 	input,
 	textarea,
 	select {
-		font-size: 23pt;
+		font-size: 16pt;
 	}
 
 	/* Header */
 
 	#header {
-		width: 400px;
+		width: 320px;
 	}
 
 	/* Footer */
@@ -2684,7 +2684,7 @@ button:active,
 
 	#main>section {
 		padding: 3em 0;
-		padding-left: 4vw;
+		padding-left: 1vw;
 
 	}
 
@@ -2704,7 +2704,7 @@ button:active,
 	input,
 	textarea,
 	select {
-		font-size: 21pt;
+		font-size: 18pt;
 	}
 
 	.container {
@@ -2809,7 +2809,7 @@ button:active,
 	input,
 	textarea,
 	select {
-		font-size: 16pt;
+		font-size: 14pt;
 	}
 
 	header br {
@@ -3003,7 +3003,7 @@ button:active,
 	input,
 	textarea,
 	select {
-		font-size: 16pt;
+		font-size: 14pt;
 	}
 
 	h2 {
