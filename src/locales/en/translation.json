@@ -25,10 +25,15 @@
     "title": "Portfolio",
     "description": "Welcome! Explore my portfolio and discover the projects I have participated in. You will find the foundations of healing and transformation stories, both of my clients and my own. Click on each image for more details and see how my unique approach can help you achieve your goals. My interventions are aimed at caring for therapists, especially those working in mental health or similar roles.",
     "mindfulness": "Mindfulness",
+    "mindfulnessText": "Daily doses of mindfulness and meditation will allow you to manage your thoughts and emotions, as well as become aware of your current situation. With a proper assessment of your daily routine, I will help you select the most appropriate activities. Shall we begin?",
     "sleepNeuropsychology": "Sleep Neuropsychology",
+    "sleepNeuropsychologyText": "Your dream world and working with your subconscious are fundamental tools for modifying patterns or traumas. A change in your sleep-wake cycle habits will improve your daily performance. Would you like to give it a try?",
     "reiki": "Reiki",
+    "reikiText": "Originating in Buddhism, Reiki uses the chakra system or energy points of the body as the basis for healing. As a Reiki Usui Master, I have conducted online and in-person sessions in various countries and continents. I have trained Level 1 and 2 Reiki practitioners. I am part of the New Zealand Reiki Federation, for whom I wrote an article in English about Reiki and mental health during the pandemic. Did you know this is an innate human capability? Would you like to activate it?",
     "crisisIntervention": "Crisis and intervention",
-    "occupationalTherapy": "Occupational Therapy"
+    "crisisInterventionText": "Crises are painful, they disarm you, and you are probably never fully prepared to face them. Each one is different in cause and manifestation. I've experienced them in the form of breakups, adapting to a new country, and one of the strongest of all, cervical cancer. Can you overcome them and use them to your advantage? Absolutely. It’s not magic; it's about feeling them, living through them, adjusting your compass, and deciding to move forward. Shall we proceed together?",
+    "occupationalTherapy": "Occupational Therapy",
+    "occupationalTherapyText": "During the pandemic, I conducted more than 1,100 online sessions with people from different countries and continents. I guided mental health processes for young people and adults facing depression, anxiety, eating disorders, crises, addictions, ADHD, ASD, PTSD, grief, and migration adaptations. Today, I am an expert in achieving therapeutic goals through telemedicine. Are you ready to book your session?"
   },
   "contact": {
     "title": "Contact",
@@ -52,7 +57,7 @@
     "read": "Read",
     "previous": "Previous",
     "next": "Next",
-    "close":  "Close"
+    "close": "Close"
   },
   "meditations": {
     "title": "Meditations",

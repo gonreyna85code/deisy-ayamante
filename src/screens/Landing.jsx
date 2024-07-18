@@ -60,7 +60,7 @@ const Landing = () => {
                     <div className="row">
                         <div className="col-4 col-12-mobile">
                             <article className="item">
-                                <Link className="image fit a" onClick={() => showModal('images/pic02.jpg', 'portfolio.mindfulness')}>
+                                <Link className="image fit a" onClick={() => showModal('images/pic02.jpg', 'portfolio.mindfulnessText')}>
                                     <img src="images/pic02.jpg" alt="Mindfulness" />
                                 </Link>
                                 <header>
@@ -70,7 +70,7 @@ const Landing = () => {
                         </div>
                         <div className="col-4 col-12-mobile">
                             <article className="item">
-                                <Link className="image fit a" onClick={() => showModal('images/pic05.jpg', 'portfolio.sleepNeuropsychology')}>
+                                <Link className="image fit a" onClick={() => showModal('images/pic05.jpg', 'portfolio.sleepNeuropsychologyText')}>
                                     <img src="images/pic05.jpg" alt="Neuropsicología del sueño" />
                                 </Link>
                                 <header>
@@ -78,7 +78,7 @@ const Landing = () => {
                                 </header>
                             </article>
                             <article className="item">
-                                <Link className="image fit a" onClick={() => showModal('images/pic07.jpg', 'portfolio.reiki')}>
+                                <Link className="image fit a" onClick={() => showModal('images/pic07.jpg', 'portfolio.reikiText')}>
                                     <img src="images/pic07.jpg" alt="Reiki" />
                                 </Link>
                                 <header>
@@ -88,7 +88,7 @@ const Landing = () => {
                         </div>
                         <div className="col-4 col-12-mobile">
                             <article className="item">
-                                <Link className="image fit a" onClick={() => showModal('images/pic06.jpg', 'portfolio.crisisIntervention')}>
+                                <Link className="image fit a" onClick={() => showModal('images/pic06.jpg', 'portfolio.crisisInterventionText')}>
                                     <img src="images/pic06.jpg" alt="Crisis and intervention" />
                                 </Link>
                                 <header>
@@ -96,7 +96,7 @@ const Landing = () => {
                                 </header>
                             </article>
                             <article className="item">
-                                <Link className="image fit a" onClick={() => showModal('images/pic03.jpg', 'portfolio.occupationalTherapy')}>
+                                <Link className="image fit a" onClick={() => showModal('images/pic03.jpg', 'portfolio.occupationalTherapyText')}>
                                     <img src="images/pic03.jpg" alt="Terapia Ocupacional" />
                                 </Link>
                                 <header>

@@ -372,6 +372,25 @@ textarea {
 	border-radius: 0;
 }
 
+.ant-modal .ant-modal-close {    
+    top: 10px;    
+    font-weight: 600;
+    line-height: 1;    
+    border-radius: 4px;
+    width: 31px;
+    height: 31px;
+    border-radius: 100px;
+	background-color: #7eaeac;
+}
+
+.ant-modal-content {    
+    text-align: center;
+}
+
+.ant-modal .ant-modal-body {
+    font-size: 18px;    
+}
+
 .ant-modal-root .ant-modal-mask {
 	position: fixed;
 	inset: 0;

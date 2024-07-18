@@ -25,10 +25,15 @@
     "title": "Portafolio",
     "description": "¡Bienvenid@! Explora mi portafolio y descubre los proyectos en los que he participado. Encontrarás los pilares de historias de sanación y transformación, tanto de mis clientes como propias. Haz clic en cada imagen para obtener más detalles y ver cómo mi enfoque único puede ayudarte a lograr tus objetivos. Mis intervenciones están dirigidas a cuidar a l@s terapeutas, especialmente a quienes trabajan en salud mental o desempeñan roles similares.",
     "mindfulness": "Mindfulness",
+    "mindfulnessText": "Dosis diarias de atención plena y meditación te permitirán gestionar tus pensamientos y emociones, así como ser consciente de tu situación actual. Con una adecuada evaluación de tu rutina diaria, te ayudaré a seleccionar las actividades más apropiadas. ¿Empezamos?.",
     "sleepNeuropsychology": "Neuropsicología del sueño",
+    "sleepNeuropsychologyText": "Durante la pandemia, realicé más de 1100 sesiones online con personas de distintos países y continentes. Guié procesos de salud mental en jóvenes y adultos que enfrentaron depresión, ansiedad, trastornos alimentarios, crisis, adicciones, TDAH, TEA, TEP, duelos y adaptaciones migratorias. Hoy en día, me convertí en experta en alcanzar objetivos terapéuticos a través de la telemedicina. ¿Y tú, estás list@ para reservar tu sesión?.",
     "reiki": "Reiki",
+    "reikiText": "Tiene su origen en el budismo y emplea el sistema de chakras o puntos energéticos del cuerpo como base para la sanación. Siendo maestra de Reiki Usui, he realizado sesiones online y presenciales en distintos países y continentes. He formado a Reikistas de Nivel 1 y 2. Soy parte de la Federación de Reiki de New Zealand, para quienes escribí un artículo en inglés sobre Reiki y salud mental en tiempos de pandemia. ¿Sabías que esta es una capacidad innata al ser humano?, ¿Te gustaría activarla?.",
     "crisisIntervention": "Crisis e intervención",
-    "occupationalTherapy": "Terapia Ocupacional"
+    "crisisInterventionText": "son dolorosas, te desarman y probablemente nunca estás preparad@ para enfrentarlas. Cada una de ellas es distinta en causa y manifestación. Las he experimentado en forma de rupturas con parejas, adaptación a un nuevo país y una de la más fuerte de todas, cáncer cervicouterino. ¿Se puede salir de ellas y usarlas a tu favor?. Por supuesto. No es magia, es sentirlas, vivirlas, ajustar la brújula y decidir avanzar. ¿Te acompaño?.",
+    "occupationalTherapy": "Terapia Ocupacional",
+    "occupationalTherapyText": "Tu mundo onírico y el trabajo con tu subconsciente son herramientas fundamentales para modificar patrones o traumas. Un cambio de hábitos en tu ciclo de sueño- vigilia mejorará tu desempeño diario. ¿Quieres intentarlo?."
   },
   "contact": {
     "title": "Contacto",
