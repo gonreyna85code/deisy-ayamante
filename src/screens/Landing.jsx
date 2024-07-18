@@ -3,12 +3,16 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Modal } from 'antd';
 
-
 const Landing = () => {
     const { t } = useTranslation();
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [modalImage, setModalImage] = useState('');
     const [modalDescriptionKey, setModalDescriptionKey] = useState('');
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: '',
+    });
 
     const showModal = (imageSrc, descriptionKey) => {
         setModalImage(imageSrc);
@@ -22,6 +26,32 @@ const Landing = () => {
 
     const handleCancel = () => {
         setIsModalVisible(false);
+    };
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        fetch(`/api/send-email`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            console.log('Success:', data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
     };
 
     return (
@@ -117,16 +147,33 @@ const Landing = () => {
                         <h2>{t('contact.title')}</h2>
                     </header>
                     <p>{t('contact.description')}</p>
-                    <form method="post" action="https://deisyayamante.vercel.app/api/send-email" id="contact-form">
+                    <form onSubmit={handleSubmit} id="contact-form">
                         <div className="row">
                             <div className="col-6 col-12-mobile">
-                                <input type="text" name="name" placeholder={t('contact.name')} />
+                                <input
+                                    type="text"
+                                    name="name"
+                                    placeholder={t('contact.name')}
+                                    value={formData.name}
+                                    onChange={handleChange}
+                                />
                             </div>
                             <div className="col-6 col-12-mobile">
-                                <input type="email" name="email" placeholder={t('contact.email')} />
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder={t('contact.email')}
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                />
                             </div>
                             <div className="col-12">
-                                <textarea name="message" placeholder={t('contact.message')}></textarea>
+                                <textarea
+                                    name="message"
+                                    placeholder={t('contact.message')}
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                ></textarea>
                             </div>
                             <div className="col-12">
                                 <input type="submit" value={t('contact.sendMessage')} />
