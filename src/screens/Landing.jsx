@@ -45,7 +45,9 @@ const Landing = () => {
                     <header>
                         <h2>{t('about.name')}</h2>
                     </header>
-                    <Link className="image featured a"><img src="images/pic08.jpg" alt="" /></Link>
+                    <div className="image featured a">
+                        <img src="images/pic08.jpg" alt="" />
+                    </div>
                     <p>{t('about.description')}</p>
                 </div>
             </section>
@@ -142,7 +144,7 @@ const Landing = () => {
             </div>
 
             {/* Modal for Portfolio Images */}
-            <Modal visible={isModalVisible} onOk={handleOk} onCancel={handleCancel} footer={null}>
+            <Modal open={isModalVisible} onOk={handleOk} onCancel={handleCancel} footer={null}>
                 <img src={modalImage} alt={t(modalDescriptionKey)} style={{ width: '100%' }} />
                 <p>{t(modalDescriptionKey)}</p>
             </Modal>
