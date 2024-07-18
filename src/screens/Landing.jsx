@@ -156,6 +156,7 @@ const Landing = () => {
                                     placeholder={t('contact.name')}
                                     value={formData.name}
                                     onChange={handleChange}
+                                    required
                                 />
                             </div>
                             <div className="col-6 col-12-mobile">
@@ -165,6 +166,7 @@ const Landing = () => {
                                     placeholder={t('contact.email')}
                                     value={formData.email}
                                     onChange={handleChange}
+                                    required
                                 />
                             </div>
                             <div className="col-12">
@@ -173,6 +175,7 @@ const Landing = () => {
                                     placeholder={t('contact.message')}
                                     value={formData.message}
                                     onChange={handleChange}
+                                    required
                                 ></textarea>
                             </div>
                             <div className="col-12">
