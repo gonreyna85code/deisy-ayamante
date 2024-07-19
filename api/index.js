@@ -6,6 +6,7 @@ const mailer = require('./routes/mailer');
 const admin = require('./routes/mailer');
 const auth = require('./routes/auth');
 const user = require('./routes/user');
+const test = require('./routes/test')
 
 const app = express();
 const PORT = process.env.API_PORT || 5050;
@@ -15,10 +16,6 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.get('/api', (req, res) => {
-  res.send("Express on Vercel");
-});
-
 app.use(session({
   secret: 'tu_clave_secreta',
   resave: false,
@@ -27,6 +24,7 @@ app.use(session({
 }));
 
 // Rutas
+app.use('/api', test)
 app.use('/api/mailer', mailer);
 app.use('/api/user', user);
 app.use('/api/auth', auth);
