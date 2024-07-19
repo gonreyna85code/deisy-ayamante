@@ -44,7 +44,7 @@ const Landing = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        fetch(`/api/send-email`, {
+        fetch(`/api/mailer/send-email`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
