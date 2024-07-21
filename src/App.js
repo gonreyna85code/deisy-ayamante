@@ -6,10 +6,12 @@ import { useTranslation } from 'react-i18next';
 import { scroller } from 'react-scroll';
 import './i18n';
 import './assets/styles.css';
-import Home from './screens/home';
+import Home from './screens/Home';
+import Register from './screens/Admin/Register';
 import BooksSection from './screens/BooksSection';
+import Login from './screens/Login';
 import Meditations from './screens/Meditations';
-import Sessions from './screens/Sessions';
+import Services from './screens/Services';
 import Admin from './screens/Admin';
 import Blog from './screens/Blog';
 import Landing from './screens/Landing';
@@ -29,7 +31,7 @@ const MainApp = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const paths = ['/home', '/booksSection', '/meditations', '/sessions', '/admin', '/blog'];
+    const paths = ['/home', '/booksSection', '/meditations', '/services', '/admin', '/blog'];
     if (paths.includes(location.pathname)) {
       setIsReactNavVisible(true);
     }
@@ -112,8 +114,8 @@ const MainApp = () => {
                 </Link>
               </li>
               <li>
-                <Link onClick={toggleMenu} to="/sessions" id="section3-link">
-                  <span className="icon solid fa-user-friends">{t('landing.sessions')}</span>
+                <Link onClick={toggleMenu} to="/services" id="section3-link">
+                  <span className="icon solid fa-user-friends">{t('landing.services')}</span>
                 </Link>
               </li>
               <li>
@@ -124,21 +126,7 @@ const MainApp = () => {
             </ul>
           </nav>
         </div>
-        <div className="middle">
-          {/* Formulario de Inicio de Sesión */}
-          <form className="login-form">
-            <div className="form-group login">
-              <input type="email" id="email" placeholder='Email' name="email" autoComplete='email' required />
-            </div>
-            <div className="form-group login">
-              <input type="password" id="password" placeholder='Password' name="password" autoComplete='off' required />
-            </div>
-            <div className="form-actions login">
-              <button type="submit" className="login-button">Iniciar</button>
-              <button type="button" className="register-button">Registrar</button>
-            </div>
-          </form>
-        </div>
+        <Login/>
         <div className="bottom">
           <ul className="icons">
             <li><a href="https://www.instagram.com" className="icon brands fa-instagram"><span className="label">Instagram</span></a></li>
@@ -153,9 +141,10 @@ const MainApp = () => {
           <Route path="/home" element={<Home />} />
           <Route path="/booksSection" element={<BooksSection />} />
           <Route path="/meditations" element={<Meditations />} />
-          <Route path="/sessions" element={<Sessions />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </div>
     </div>

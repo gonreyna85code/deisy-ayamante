@@ -9,7 +9,7 @@
     "books": "Libros",
     "meditations": "Meditaciones",
     "blog": "Blog",
-    "sessions": "Sesiones",
+    "services": "Servicios",
     "administration": "Administración"
   },
   "intro": {
@@ -19,7 +19,7 @@
   },
   "about": {
     "name": "Deisy Ayamante",
-    "description": "Soy una mujer sanadora que conecta su mente, cuerpo y espíritu con la tierra. Utilizo mis pócimas diarias para hacer que las cosas sucedan. Combino una dosis de Terapia Ocupacional con una de neuropsicología y añado una infusión de mindfulness. Un toque de viajes, risas, y unas gotas de mis ingredientes favoritos: sabiduría y amor. Te comparto mis aprendizajes desde Chile, Nueva Zelanda y España."
+    "description": "Soy una mujer sanadora que conecta su mente, cuerpo y espíritu con la tierra. Utilizo mis pócimas diarias para hacer que las cosas sucedan. Combino una dosis de Terapia Ocupacional con una de neuropsicología y añado una infusión de mindfulness. Un toque de viajes, risas, y unas gotas de mis ingredientes favoritos: sabiduría y amor. Te comparto mis aprendizajes desde Chile, Nueva Zelanda y España. Mi trayectoria profesional de 14 años incluye un grado en Terapia Ocupacional (UACh, Chile), un Máster en Neuropsicología y Educación (UNIR, España), Candidata a Máster en Escritura Creativa (UNIR, España), formación en Integración Sensorial (USC, USA), y un título en Mindfulness y Gestión Emocional (La Salle, España). Maestra de Reiki Usui (Chile). He sido Terapeuta Ocupacional y coordinadora de equipos en salud mental pública en Chile y docente universitaria."
   },
   "portfolio": {
     "title": "Portafolio",
@@ -43,12 +43,21 @@
     "message": "Mensaje",
     "sendMessage": "Enviar Mensaje"
   },
+  "register": {
+    "title": "Registro",
+    "description": "Por favor ingresa tu información aquí",
+    "name": "Nombre",
+    "email": "Email",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "register": "Registro"
+  },
   "home": {
     "start": "¡Comienza Ahora!",
     "section_intro": "En esta sección encontrarás herramientas muy útiles para tu bienestar. Desde el menú, podrás acceder a una variedad de recursos como libros y meditaciones, así como la opción de solicitar sesiones personales.",
     "books": "Libros",
     "meditations": "Meditaciones",
-    "sessions": "Sesiones",
+    "services": "Servicios",
     "admin": "Administración"
   },
   "books": {

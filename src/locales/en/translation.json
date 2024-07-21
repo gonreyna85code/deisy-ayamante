@@ -9,7 +9,7 @@
     "books": "Books",
     "meditations": "Meditations",
     "blog": "Blog",
-    "sessions": "Sessions",
+    "services": "Services",
     "administration": "Administration"
   },
   "intro": {
@@ -19,7 +19,7 @@
   },
   "about": {
     "name": "Deisy Ayamante",
-    "description": "I am a healing woman who connects her mind, body, and spirit with the earth. I use my daily potions to make things happen. I combine a dose of Occupational Therapy with one of neuropsychology and add an infusion of mindfulness. A touch of travel, laughter, and a few drops of my favorite ingredients: wisdom and love. I share my learnings with you from Chile, New Zealand and Spain."
+    "description": "I am a healing woman who connects her mind, body, and spirit with the earth. I use my daily potions to make things happen. I combine a dose of Occupational Therapy with one of neuropsychology and add an infusion of mindfulness. A touch of travel, laughter, and a few drops of my favorite ingredients: wisdom and love. I share my learnings with you from Chile, New Zealand and Spain. My professional career of 14 years includes a degree in Occupational Therapy (UACh, Chile), a Master's in Neuropsychology and Education (UNIR, Spain), Candidate for a Master's in Creative Writing (UNIR, Spain), training in Sensory Integration (USC, USA), and a degree in Mindfulness and Emotional Management (La Salle, Spain). Usui Reiki Master (Chile). I have been an Occupational Therapist and coordinator of teams in public mental health in Chile and a university lecturer."
   },
   "portfolio": {
     "title": "Portfolio",
@@ -43,12 +43,21 @@
     "message": "Message",
     "sendMessage": "Send Message"
   },
+  "register": {
+    "title": "Register",
+    "description": "Please submit your information here",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "register": "Register"
+  },
   "home": {
     "start": "Get Started Now!",
     "section_intro": "In this section you will find very useful tools for your well-being. From the menu, you can access a variety of resources such as books and meditations, as well as the option to request personal sessions.",
     "books": "Books",
     "meditations": "Meditations",
-    "sessions": "Sessions",
+    "services": "Services",
     "admin": "Administration"
   },
   "books": {
