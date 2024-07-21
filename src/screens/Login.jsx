@@ -22,7 +22,7 @@ const Login = () => {
 
             if (response.status === 200) {
                 setUser(response.data.user); // Almacena la información del usuario
-                navigate('/home'); // Navegar a la página de inicio
+
             } else {
                 setError('Error en el inicio de sesión'); // Manejar el error de inicio de sesión aquí
             }
