@@ -19,7 +19,6 @@
 .env.production.local
 .env
 /api/.env
-/api/mi_base_de_datos.db
 
 npm-debug.log*
 yarn-debug.log*
