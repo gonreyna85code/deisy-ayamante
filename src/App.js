@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { scroller } from 'react-scroll';
 import './i18n';
 import './assets/styles.css';
-import Home from './screens/Home';
+import Home from './screens/home';
 import Register from './screens/Admin/Register';
 import BooksSection from './screens/BooksSection';
 import Login from './screens/Login';
