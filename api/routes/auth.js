@@ -6,28 +6,26 @@ require('dotenv').config({ path: '../.env' });
 
 // Configuración del transporte para enviar correos electrónicos
 const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
-  auth: {
-    user: process.env.MAIL,
-    pass: process.env.PSSAPP
-  }
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
+    auth: {
+        user: process.env.MAIL,
+        pass: process.env.PSSAPP
+    }
 });
 
 // Ruta de registro
 router.post('/register', (req, res) => {
     const { username, email, password } = req.body;
-    const verificationToken = db.generateVerificationToken();
-    
     db.registerUser(username, email, password, (err, userId) => {
         if (err) {
-            return res.status(500).json({ error: 'Error registrando usuario' });
+            return res.status(500).json({ error: `Error registrando usuario: ${err}` });
         }
-        
+        const verificationToken = db.generateVerificationToken();
         db.setVerificationToken(email, verificationToken, (err) => {
             if (err) {
-                return res.status(500).json({ error: 'Error generando token de verificación' });
+                return res.status(500).json({ error: `Error generando token de verificación': ${err}` });
             }
 
             const mailOptions = {
@@ -39,7 +37,7 @@ router.post('/register', (req, res) => {
 
             transporter.sendMail(mailOptions, (error, info) => {
                 if (error) {
-                    return res.status(500).json({ error: 'Error enviando correo de verificación' });
+                    return res.status(500).json({ error: `Error enviando correo de verificación': ${error}` });
                 }
                 res.status(201).json({ message: 'Usuario registrado. Por favor, verifica tu correo electrónico.', userId });
             });
@@ -68,7 +66,7 @@ router.post('/login', (req, res) => {
     const { email, password } = req.body;
     db.authenticateUser(email, password, (err, user) => {
         if (err) {
-            return res.status(500).json({ error: 'Error en la autenticación' });
+            return res.status(500).json({ error: err });
         }
         if (!user) {
             return res.status(401).json({ error: 'Credenciales incorrectas' });
