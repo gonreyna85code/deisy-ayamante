@@ -44,7 +44,7 @@ const Login = () => {
     const handleLogout = () => {
         setUser(null);
         Cookies.remove('user');
-        navigate('/home');
+        navigate('/');
     };
 
     return (
