@@ -73,7 +73,7 @@ router.get('/verify-email', async (req, res) => {
         user.verified = true;
         user.verificationToken = null;
         await user.save();
-        res.redirect(process.env.REACT_APP_BASE_URL);
+        res.redirect('/home');
     } catch (err) {
         res.status(500).json({ error: `Error al verificar el token: ${err}` });
     }
