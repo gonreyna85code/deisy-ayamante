@@ -1,5 +1,7 @@
 const express = require('express');
 const session = require('express-session');
+const MongoStore = require('connect-mongo');
+const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mailer = require('./routes/mailer');
@@ -17,10 +19,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use(session({
-  secret: 'tu_clave_secreta',
+  secret: 'your_secret_key', // Cambia esto por una clave secreta segura
   resave: false,
-  saveUninitialized: true,
-  cookie: { secure: false } // Cambia a true si usas HTTPS
+  saveUninitialized: false,
+  store: MongoStore.create({
+      mongoUrl: process.env.MONGO_DB,
+      mongooseConnection: mongoose.connection
+  })
 }));
 
 // Rutas
