@@ -18,7 +18,7 @@ const PORT = process.env.API_PORT || 5050;
 const clientOptions = { serverApi: { version: '1', strict: true, deprecationErrors: true } };
 async function connectToDatabase() {
     try {
-        await mongoose.connect(process.env.MONGO_DB, clientOptions);
+        await mongoose.connect(process.env.MONGO_DB, clientOptions  );
         console.log("MongoDB Connected");
     } catch (err) {
         console.error("Error connecting to MongoDB:", err.message);
