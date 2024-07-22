@@ -2,17 +2,6 @@ const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 const { Usuario, Imagen } = require('./models');
 
-const clientOptions = { serverApi: { version: '1', strict: true, deprecationErrors: true } };
-
-const connectToDatabase = async () => {
-    try {
-        await mongoose.connect(process.env.MONGO_DB, clientOptions);
-        console.log("MongoDB Connected");
-    } catch (err) {
-        console.error("Error connecting to MongoDB:", err.message);
-        process.exit(1); // Exit the process with an error code
-    }
-};
 // Registrar un usuario
 const registerUser = async (username, email, password) => {
     try {
@@ -75,7 +64,6 @@ const verifyToken = async (token) => {
 };
 
 module.exports = {
-    connectToDatabase,
     registerUser,
     authenticateUser,
     getImage,
