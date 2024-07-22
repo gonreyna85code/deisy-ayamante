@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from '../axiosConfig';
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 const Login = () => {
+    const { t } = useTranslation();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const [user, setUser] = useState(null); // Estado para almacenar la información del usuario
     const navigate = useNavigate();
-    // const { t } = useTranslation();
 
     const handleLogin = async (e) => {
         e.preventDefault();
@@ -23,12 +23,11 @@ const Login = () => {
 
             if (response.status === 200) {
                 setUser(response.data.user); // Almacena la información del usuario
-
             } else {
-                setError('Error en el inicio de sesión'); // Manejar el error de inicio de sesión aquí
+                setError(t('login.error')); // Manejar el error de inicio de sesión aquí
             }
         } catch (error) {
-            setError('Error en el inicio de sesión'); // Manejar el error de inicio de sesión aquí
+            setError(t('login.error')); // Manejar el error de inicio de sesión aquí
         }
     };
 
@@ -36,8 +35,8 @@ const Login = () => {
         <div className="middle">
             {user ? (
                 <div className="user-info">
-                    <p>Bienvenido, {user.username}</p>
-                    {!user.verified ? 'Por favor valida tu email' : null}
+                    <p>{t('login.welcome')}, {user.username}</p>
+                    {!user.verified ? t('login.verifyEmail') : null}
                 </div>
             ) : (
                 <form className="login-form" onSubmit={handleLogin}>
@@ -45,7 +44,7 @@ const Login = () => {
                         <input
                             type="email"
                             id="email"
-                            placeholder='Email'
+                            placeholder={t('login.email')}
                             name="email"
                             autoComplete='email'
                             required
@@ -57,7 +56,7 @@ const Login = () => {
                         <input
                             type="password"
                             id="password"
-                            placeholder='Password'
+                            placeholder={t('login.password')}
                             name="password"
                             autoComplete='off'
                             required
@@ -67,8 +66,8 @@ const Login = () => {
                     </div>
                     
                     <div className="form-actions login">
-                        <button type="submit" className="login-button">Iniciar</button>
-                        <button type="button" className="register-button" onClick={() => navigate('/register')}>Registrar</button>
+                        <button type="submit" className="login-button">{t('login.login')}</button>
+                        <button type="button" className="register-button" onClick={() => navigate('/register')}>{t('login.register')}</button>
                     </div>
                 </form>
             )}

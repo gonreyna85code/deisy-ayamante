@@ -43,6 +43,15 @@
     "message": "Mensaje",
     "sendMessage": "Enviar Mensaje"
   },
+  "login": {
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "login": "Iniciar",
+    "register": "Registrar",
+    "error": "Error en el inicio de sesión",
+    "welcome": "Bienvenido",
+    "verifyEmail": "Por favor verifica tu correo electrónico"
+  },
   "register": {
     "title": "Registro",
     "description": "Por favor ingresa tu información aquí",

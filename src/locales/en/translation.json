@@ -43,6 +43,15 @@
     "message": "Message",
     "sendMessage": "Send Message"
   },
+  "login": {
+    "email": "Email",
+    "password": "Password",
+    "login": "Login",
+    "register": "Register",
+    "error": "Login error",
+    "welcome": "Welcome",
+    "verifyEmail": "Please verify your email"
+  },
   "register": {
     "title": "Register",
     "description": "Please submit your information here",
