@@ -36,8 +36,8 @@ const Login = () => {
         <div className="middle">
             {user ? (
                 <div className="user-info">
-                    <h2>Bienvenido, {user.username}</h2>
-                    <p>Email: {user.email}</p>
+                    <p>Bienvenido, {user.username}</p>
+                    {!user.verified ? 'Por favor valida tu email' : null}
                 </div>
             ) : (
                 <form className="login-form" onSubmit={handleLogin}>

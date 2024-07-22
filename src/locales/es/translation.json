@@ -50,7 +50,9 @@
     "email": "Email",
     "password": "Contraseña",
     "confirmPassword": "Confirmar contraseña",
-    "register": "Registro"
+    "register": "Registro",
+    "successMessage": "Registro completo!",
+    "checkEmail": "Por favor revisa tu email para poder verificar tu cuenta."
   },
   "home": {
     "start": "¡Comienza Ahora!",
