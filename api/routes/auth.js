@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { Usuario } = require('../models'); // Asegúrate de que la ruta sea correcta
 const nodemailer = require('nodemailer');
-require('dotenv').config({ path: '../.env' });
+require('dotenv').config();
 const bcrypt = require('bcrypt');
 const crypto = require('crypto');
 
@@ -73,7 +73,7 @@ router.get('/verify-email', async (req, res) => {
         user.verified = true;
         user.verificationToken = null;
         await user.save();
-        res.redirect('/home');
+        res.redirect('/'); // Redirige al usuario a la página principal después de la verificación
     } catch (err) {
         res.status(500).json({ error: `Error al verificar el token: ${err}` });
     }
@@ -102,6 +102,7 @@ router.post('/login', async (req, res) => {
     }
 });
 
+// Ruta para verificar la autenticación
 router.get('/check-auth', (req, res) => {
     if (req.session.userId) {
         res.status(200).json({ authenticated: true, userId: req.session.userId, isAdmin: req.session.isAdmin });

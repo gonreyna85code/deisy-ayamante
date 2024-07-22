@@ -19,7 +19,7 @@
   },
   "about": {
     "name": "Deisy Ayamante",
-    "description": "I am a healing woman who connects her mind, body, and spirit with the earth. I use my daily potions to make things happen. I combine a dose of Occupational Therapy with one of neuropsychology and add an infusion of mindfulness. A touch of travel, laughter, and a few drops of my favorite ingredients: wisdom and love. I share my learnings with you from Chile, New Zealand and Spain. My professional career of 14 years includes a degree in Occupational Therapy (UACh, Chile), a Master's in Neuropsychology and Education (UNIR, Spain), Candidate for a Master's in Creative Writing (UNIR, Spain), training in Sensory Integration (USC, USA), and a degree in Mindfulness and Emotional Management (La Salle, Spain). Usui Reiki Master (Chile). I have been an Occupational Therapist and coordinator of teams in public mental health in Chile and a university lecturer."
+    "description": "I am a healing woman who connects her mind, body, and spirit with the earth. I use my daily potions to make things happen. I blend a dose of Occupational Therapy with Neuropsychology and add a touch of mindfulness. A hint of travel, laughter, and a few drops of my favorite ingredients: wisdom and love. I share my learnings from Chile, New Zealand, and Spain. My 14-year professional journey includes a degree in Occupational Therapy (UACh, Chile), a Master’s in Neuropsychology and Education (UNIR, Spain), a Candidate for a Master's in Creative Writing (UNIR, Spain), training in Sensory Integration (USC, USA), a university degree in Mindfulness and Emotional Management (La Salle University Center, Spain), and a Reiki Usui Master (Chile). I have worked as an Occupational Therapist and coordinator of public mental health teams in Chile and as a university lecturer."
   },
   "portfolio": {
     "title": "Portfolio",
@@ -48,9 +48,10 @@
     "password": "Password",
     "login": "Login",
     "register": "Register",
-    "error": "Login error",
     "welcome": "Welcome",
-    "verifyEmail": "Please verify your email"
+    "verifyEmail": "Please verify your email",
+    "error": "Login error",
+    "logout": "Logout"
   },
   "register": {
     "title": "Register",

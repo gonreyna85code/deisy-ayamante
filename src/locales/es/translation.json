@@ -19,7 +19,7 @@
   },
   "about": {
     "name": "Deisy Ayamante",
-    "description": "Soy una mujer sanadora que conecta su mente, cuerpo y espíritu con la tierra. Utilizo mis pócimas diarias para hacer que las cosas sucedan. Combino una dosis de Terapia Ocupacional con una de neuropsicología y añado una infusión de mindfulness. Un toque de viajes, risas, y unas gotas de mis ingredientes favoritos: sabiduría y amor. Te comparto mis aprendizajes desde Chile, Nueva Zelanda y España. Mi trayectoria profesional de 14 años incluye un grado en Terapia Ocupacional (UACh, Chile), un Máster en Neuropsicología y Educación (UNIR, España), Candidata a Máster en Escritura Creativa (UNIR, España), formación en Integración Sensorial (USC, USA), y un título en Mindfulness y Gestión Emocional (La Salle, España). Maestra de Reiki Usui (Chile). He sido Terapeuta Ocupacional y coordinadora de equipos en salud mental pública en Chile y docente universitaria."
+    "description": "Soy una mujer sanadora que conecta su mente, cuerpo y espíritu con la tierra. Utilizo mis pócimas diarias para hacer que las cosas sucedan. Combino una dosis de Terapia Ocupacional con una de neuropsicología y añado una infusión de mindfulness. Un toque de viajes, risas, y unas gotas de mis ingredientes favoritos: sabiduría y amor. Te comparto mis aprendizajes desde Chile, Nueva Zelanda y España. Mi trayectoria profesional de 14 años incluye un grado en Terapia Ocupacional (UACh, Chile), un Máster en Neuropsicología y Educación (UNIR, España), Candidata a Máster en Escritura Creativa (UNIR, España), formación en Integración Sensorial (USC, USA), Título universitario en Mindfulness y gestión emocional (Centro Universitario de La Salle, España) y Maestra de Reiki Usui (Chile). He sido Terapeuta Ocupacional y coordinadora de equipos de salud mental pública en Chile y docente universitaria."
   },
   "portfolio": {
     "title": "Portafolio",
@@ -46,11 +46,12 @@
   "login": {
     "email": "Correo electrónico",
     "password": "Contraseña",
-    "login": "Iniciar",
+    "login": "Iniciar sesión",
     "register": "Registrar",
-    "error": "Error en el inicio de sesión",
     "welcome": "Bienvenid@",
-    "verifyEmail": "Por favor verifica tu correo electrónico"
+    "verifyEmail": "Por favor, verifica tu correo electrónico",
+    "error": "Error en el inicio de sesión",
+    "logout": "Cerrar sesión"
   },
   "register": {
     "title": "Registro",
