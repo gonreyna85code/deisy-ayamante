@@ -70,12 +70,10 @@ router.get('/verify-email', async (req, res) => {
         if (!user) {
             return res.status(400).json({ error: 'Token inválido' });
         }
-
         user.verified = true;
         user.verificationToken = null;
         await user.save();
-
-        res.status(200).json({ message: 'Correo electrónico verificado exitosamente' });
+        res.redirect(process.env.REACT_APP_BASE_URL);
     } catch (err) {
         res.status(500).json({ error: `Error al verificar el token: ${err}` });
     }
